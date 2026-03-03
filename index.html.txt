@@ -3,162 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aditya Mishra — Manager | Portfolio</title>
-  <meta name="description" content="Aditya Mishra — Manager based in Pune. Portfolio, projects, and contact." />
+  <title>Aditya Mishra — Project S2P</title>
+  <meta name="description" content="Project S2P site by Aditya Mishra">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header / Nav -->
+
+  <!-- Header / Top Nav -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">Aditya</a>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact" class="btn btn-primary">Contact</a>
+      <a class="brand" href="#">Project S2P</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" class="nav-link">About</a>
+        <!-- Add more sections later, e.g.:
+        <a href="#scope" class="nav-link">Scope</a>
+        <a href="#timeline" class="nav-link">Timeline</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        -->
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
+  <!-- Hero (Optional Intro) -->
+  <section class="hero" role="region" aria-label="Intro">
     <div class="container">
-      <h1>Driving teams to deliver measurable impact</h1>
+      <h1>Source‑to‑Pay (S2P) — Overview</h1>
       <p class="subtitle">
-        I’m Aditya Mishra, a Manager based in Pune, focused on execution, stakeholder alignment,
-        and data-informed decisions.
+        A streamlined view of objectives, governance, and progress for stakeholders.
       </p>
       <div class="cta-group">
-        <a href="#work" class="btn btn-primary">View Work</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <a href="#about" class="btn btn-primary">Go to About</a>
       </div>
-      <ul class="highlights">
-        <li>📈 Led multi-functional projects</li>
-        <li>⏱️ On-time delivery & governance</li>
-        <li>🤝 Cross-team collaboration</li>
-      </ul>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
+  <!-- ABOUT -->
+  <section id="about" class="section" aria-labelledby="about-title">
     <div class="container grid-2">
       <div>
-        <h2>About</h2>
+        <h2 id="about-title">About</h2>
         <p>
-          I bring structure to complex initiatives—connecting strategy with execution. My work blends
-          planning, communication, and data to ship outcomes.
+          Project S2P focuses on optimizing the Source‑to‑Pay lifecycle—standardizing intake,
+          improving vendor onboarding, and automating reporting to reduce cycle time and risk.
         </p>
         <p>
-          Previously collaborated with leaders like <strong>Anil Wadhwa</strong> and <strong>Sonam Malik</strong>,
-          delivering cross-org programs with transparent metrics and cadence.
-        </p>
-      </div>
-      <div class="card">
-        <h3>Snapshot</h3>
-        <ul class="list">
-          <li>Location: Pune, Maharashtra</li>
-          <li>Focus: Delivery, PMO, stakeholder management</li>
-          <li>Interests: Ops excellence, dashboards, automation</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work / Projects -->
-  <section id="work" class="section alt">
-    <div class="container">
-      <h2>Selected Work</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Program X — Roadmap & Governance</h3>
-          <p>Set up quarterly planning, risk reviews, and KPI dashboards to align 5+ teams.</p>
-          <ul class="tags">
-            <li>Roadmapping</li><li>OKRs</li><li>Stakeholders</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Ops Automation</h3>
-          <p>Streamlined reporting via Power Automate & Excel models, cutting weekly toil by 60%.</p>
-          <ul class="tags">
-            <li>Automation</li><li>Power Platform</li><li>Dashboards</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Vendor Management</h3>
-          <p>Negotiated SLAs and cadence to stabilize delivery and reduce escalations.</p>
-          <ul class="tags">
-            <li>Contracts</li><li>SLAs</li><li>Risk</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="pill-list">
-        <span>Project Delivery</span>
-        <span>PMO</span>
-        <span>Stakeholder mgmt</span>
-        <span>Risk & Issue mgmt</span>
-        <span>Excel / Power BI</span>
-        <span>Power Automate</span>
-        <span>Process Mapping</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section alt">
-    <div class="container grid-2">
-      <div>
-        <h2>Contact</h2>
-        <p>
-          Prefer email or LinkedIn? I’ll respond within 1–2 business days.
-        </p>
-        <ul class="list">
-          <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-          <li>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">Profile</a></li>
-        </ul>
-      </div>
-      <form class="card" name="contact" netlify>
-        <label>
-          Name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button class="btn btn-primary" type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Aditya Mishra. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Simple mobile nav toggle
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
