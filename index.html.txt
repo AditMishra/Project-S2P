@@ -1,53 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aditya Mishra — Project S2P</title>
-  <meta name="description" content="Project S2P site by Aditya Mishra">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+<title>S2P Project</title>
 </head>
 <body>
 
-  <!-- Header / Top Nav -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#">Project S2P</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#about" class="nav-link">About</a>
-        <!-- Add more sections later, e.g.:
-        <a href="#scope" class="nav-link">Scope</a>
-        <a href="#timeline" class="nav-link">Timeline</a>
-        <a href="#contact" class="nav-link">Contact</a>
-        -->
-      </nav>
-      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
+<h1>Source to Pay</h1>
+<p>we are starting a project which will be completely web based UI where anyone can plug and use the S2P system from us and utilize that.</p>
 
-  <!-- Hero (Optional Intro) -->
-  <section class="hero" role="region" aria-label="Intro">
-    <div class="container">
-      <h1>Source‑to‑Pay (S2P) — Overview</h1>
-      <p class="subtitle">
-        A streamlined view of objectives, governance, and progress for stakeholders.
-      </p>
-      <div class="cta-group">
-        <a href="#about" class="btn btn-primary">Go to About</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section" aria-labelledby="about-title">
-    <div class="container grid-2">
-      <div>
-        <h2 id="about-title">About</h2>
-        <p>
-          Project S2P focuses on optimizing the Source‑to‑Pay lifecycle—standardizing intake,
-          improving vendor onboarding, and automating reporting to reduce cycle time and risk.
-        </p>
-        <p>
+</body>
+</html>
